@@ -1,0 +1,133 @@
+.stext {
+	color: black;
+	style-font: Brush Script MT;
+	font-size: 16;
+	text-align: center;
+	padding: 0px 0px 20px;
+}
+.menytxt {
+	position: fixed;
+	color: black;
+	style-font: Brush Script MT;
+	font-size: 13;
+	padding-left: 1340px;
+	white-space: nowrap;
+}
+body {
+		background-color: lightgrey;
+}
+.box1 {
+	bottom: 5%;
+	width:25%;
+	height: 260px;
+	position: fixed;
+	left: 5%;
+	background: orange;
+	border: 3px solid grey;
+}
+.box2 {
+	width: 30%;
+	height: 260px;
+	position: fixed;
+	left: 35%;
+	bottom: 5%;
+	
+	background: orange;
+	border: 3px solid grey;
+}
+.box3 {
+	bottom: 5%;
+	width: 25%;
+	height: 260px;
+	position: fixed;
+	right: 5%;
+	border-style: solid;
+	border: 3px solid grey;
+	border-color:grey;
+	background: orange;
+	
+}
+.header {
+	border-style: groove;
+	border-color: green;
+	position:absolute;
+	left: -5px;
+	top: 0%;
+	width:100%;
+	height:90px;
+	padding: 0px;
+	text-align: center;
+	background: #1abc9c;
+	color: white;
+	font-size: 30px;
+}
+.menuButton {
+	position:relative;
+	border-style: groove;
+	border-color: black;
+	left:92.8%;
+	height: 89px;
+	top:-1px;
+	background: black;
+	width: 7%;
+	opacity: 1;
+	transition: 0.3s;
+	
+}
+.menuButton:hover { 
+	opacity: 0.6;
+	transition: 0.3s;
+	
+}
+.menuLine1 {
+	margin: auto;
+	width: 40%;
+	border: 3px solid white;
+	position:relative;
+	top:20px;
+	height: 2.5px;
+	background: white;
+}
+.menuLine2 {
+	margin: auto;
+	width: 35%;
+	height: 4px;
+	background: white;
+	border: 3px solid white;
+	position:relative;
+	top:31px;
+}
+.menuLine3 {
+	margin: auto;
+	width: 40%;
+	border: 3px solid white;
+	position:relative;
+	top:42px;
+	height: 2.5px;
+	background: white;
+}
+.dropdown {
+	display:none; 
+	background: black;
+	margin-left: auto; 
+	margin-right: 0;
+	position: relative;
+	width: 30%;
+	bottom:0px;
+	height: 310px;
+	border-style: solid;
+	
+}
+.dropB1 {
+	margin-left: 0;
+	margin-right: auto;
+	position: relative;
+	
+	border: 2px groove green;
+	top: 0px;
+	background:lightgrey;
+	opacity: 0.8;
+	height: 58px;
+	transition: 0.4s;
+}	
+.dropB1:hover { opacity:0.5;}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function dropMenu() {
+		var x = document.getElementById("dropMeny");
+		
+			if (x.style.display === 'none' ) {
+				document.getElementById("dropMeny").style.display = 'block';
+				}  else {
+					document.getElementById("dropMeny").style.display = 'none';
+				}
+		}
+		function menuClick(x) {
+			location.href=x;
+		}
+		
+	</script>
+<link rel="stylesheet" href="stylesheet js test 2.css">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title> JS test 2 </title>
+
+<body >
+<div class=header>
+<p class="menytxt"> Meny</p>
+	<div class=menuButton onclick="dropMenu()"> 
+		<!-- prøv å legge til en transition, så menyen ikkje insta dropper-->
+		<div class=menuLine1>
+		</div>
+		<div class=menuLine2>
+		</div>
+		<div class=menuLine3>
+		</div>
+	</div>
+		<div class=dropdown id="dropMeny" onclick="menuClick('javascript testing.html')">
+			<div class=dropB1 id="db1">
+			<p class=stext> Frontside </p>
+			</div>
+			<div class=dropB1 onclick="menuClick('http://www.vg.no')" id="db2">
+			<p class=stext> Side nr. 2 </p>
+			</div>
+			<div class=dropB1 id="db3" onclick="menuClick('http://www.vg.no')">
+			<p class=stext> Side nr. 3 </p>
+			</div>
+			<div class=dropB1 id="db4" onclick="menuClick('http://www.vg.no')">
+			<p class=stext> Side nr. 4 </p>
+			</div>
+			<div class=dropB1 id="db5" onclick="menuClick('http://www.vg.no')">
+			<p class=stext> Side nr. 5 </p>
+			</div>
+			</div>
+		<div class=box1>
+		</div>
+		<div class=box2>
+		</div>
+		<div class=box3>
+		</div>
+</div>
+</body>
+
+</head>
+</html>
