@@ -1,0 +1,102 @@
+body {
+	background-color: #DFCFBE;
+}
+.header {
+	border-style: groove;
+	border-color: #DFCFBE;
+	position: absolute;
+	background: #DFCFBE;
+	width: 94%;
+	height: 20%;
+	left: 3%;
+	top: 1%;
+}
+.menuBox {
+	
+	position: absolute;
+	background: #DFCFBE;
+	width: 20%;
+	height: 70%;
+	left: 3%;
+	top: 26%;
+}
+
+.menuText {
+    position: relative;
+	border-style: groove;
+	border-color: #DFCFBE;
+	background: lightgrey;
+	width: 100%;
+	height: 14.28%;
+    top: 0%;
+    transition: 2s;
+}
+.menuStyle {
+    position: absolute;
+	font-style: italic;
+	font-size: 30px;
+    margin-left: 40%;
+    margin-top: 8%; 
+}
+.menuBtn {
+	position: relative;
+	border-style: groove;
+	border-color: #DFCFBE;
+	background: grey;
+	width: 100%;
+	height: 12.27%;
+    top: 0%;
+    transition: 2s;
+    text-align: center;  
+}
+
+.menuBtn:hover {
+    background: #93c6fdb1;
+    transition: 0.9s;
+}
+.menuBtn p {
+    font-style: "Brush Script MT", "Cursive";
+	font-size: 25px;
+}
+.menuBtn p::after {
+    content: '';
+	margin-left:30%;
+    width: 0px;
+    height: 2px;
+    display: block;
+    transition: 600ms;
+
+}
+.menuBtn p:hover::after {
+    width: 40%;
+	background: white;
+	
+}
+.boxHoyre {
+	position: absolute;
+	border-style: ridge;
+	border-color:#DFCFBE ;
+	background: #DFCFBE;
+	width: 20%;
+	height: 70%;
+	right: 3%;
+	top: 26%;
+}
+.midBox {
+	position: absolute;
+	
+	border-color:#DFCFBE ;
+	background: #DFCFBE;
+	width: 45%;
+	height: 70%;
+	left: 30%;
+	top: 26%;
+}
+.tekst {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+	
+	visibility: hidden;
+}
