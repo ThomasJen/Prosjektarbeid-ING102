@@ -62,7 +62,7 @@ body {
     content: '';
 	margin-left:30%;
     width: 0px;
-    height: 2px;
+    height: 1px;
     display: block;
     transition: 600ms;
 
@@ -84,8 +84,8 @@ body {
 }
 .midBox {
 	position: absolute;
-	
-	border-color:#DFCFBE ;
+	border-style: dotted;
+	border-color:black ;
 	background: #DFCFBE;
 	width: 45%;
 	height: 70%;
@@ -100,3 +100,44 @@ body {
 	
 	visibility: hidden;
 }
+.bilBilde {
+	position: relative;
+	right:-30%;
+	bottom: -10%;
+	opacity: 1;
+	transition: 1s;
+}
+.bilBilde:hover {
+	opacity: 0.7;
+	transition: opacity 1s;
+}
+.bilBilde:hover .text-block strong{
+	opacity: 1;
+	transition:  1s;
+}
+.bilBilde:hover .text-block h4{
+	opacity: 1;
+	transition:  1s;
+}
+.text-block {
+	position: absolute;
+	right: 43%;
+	bottom: 30%;
+	visibility: visible;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+  .text-block h4 {
+	  font-size: 20px;
+	  opacity: 0;
+	  text-align: center;
+	  font-style: italic;
+	  transition: 1s;
+  }
+  .text-block strong {
+	  font-size: 18px;
+	  opacity: 0;
+	  transition: 1s;
+  }
+
