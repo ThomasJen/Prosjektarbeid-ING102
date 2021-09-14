@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<script>
+			function sendTil(x) {
+				location.href = x;
+			}
+			function visTekst(x) {
+				let id = ["1", "2", "3", "4", "5", "6"];
+				for (let i = 0; 1 <= 6; i++) {
+					if (id[i] === x) {
+						document.getElementById(id[i]).style.visibility =
+							"visible";
+					} else {
+						document.getElementById(id[i]).style.visibility =
+							"hidden";
+					}
+				}
+			}
+		</script>
+		<link rel="stylesheet" href="Ing102ForsideCSS.css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Shavi</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<!-- legg bilde her -->
+		</div>
+		<div class="menuBox">
+			<div class="menuText" onmouseover="visTekst(0)">
+				<p class="menuStyle">Meny</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('1')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('https://www.vg.no')"
+			>
+				<p>Utlånssted</p> 
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('2')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('https://www.vg.no')"
+			>
+				<p>Bil</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('3')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('https://www.vg.no')"
+			>
+				<p>Båt</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('4')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('https://www.vg.no')"
+			>
+				<p>Abonnement</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('5')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('https://www.vg.no')"
+			>
+				<p>Booking</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('6')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('https://www.vg.no')"
+			>
+				<p>info</p>
+			</div>
+		</div>
+		<div class="boxHoyre">
+			<!-- legg inn bilde på høyre siden her-->
+		</div>
+		<div class="midBox">
+			
+        </div>
+	</body>
+</html>
