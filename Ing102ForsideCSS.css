@@ -84,8 +84,7 @@ body {
 }
 .midBox {
 	position: absolute;
-	border-style: dotted;
-	border-color:black ;
+	
 	background: #DFCFBE;
 	width: 45%;
 	height: 70%;
