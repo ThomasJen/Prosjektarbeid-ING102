@@ -31,6 +31,10 @@ body {
     top: 0%;
     transition: 2s;
 }
+.menuText:hover {
+	transition: 1s;
+	background: grey;
+}
 .menuStyle {
     position: absolute;
 	font-style: italic;
@@ -53,6 +57,10 @@ body {
 .menuBtn:hover {
     background: #93c6fdb1;
     transition: 0.9s;
+}
+.menuBtn:hover p:hover::after {
+	width: 40%;
+	background: white;
 }
 .menuBtn p {
     font-style: "Brush Script MT", "Cursive";
@@ -139,4 +147,8 @@ body {
 	  opacity: 0;
 	  transition: 1s;
   }
-
+.headBilde {
+	position:relative;
+	width: 100%;
+	height: 100%;
+}
