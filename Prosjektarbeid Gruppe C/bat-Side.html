@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<script>
+			function sendTil(x) {
+				location.href = x;
+			}
+			function visTekst(x) {
+				let id = ["1", "2", "3", "4", "5", "6"];
+				for (let i = 0; 1 <= 6; i++) {
+					if (id[i] === x) {
+						document.getElementById(id[i]).style.visibility =
+							"visible";
+					} else {
+						document.getElementById(id[i]).style.visibility =
+							"hidden";
+					}
+				}
+			}
+		</script>
+		<link rel="stylesheet" href="Hovedstilark.css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>Shavi</title>
+	</head>
+
+	<body>
+		<div class="header" >
+			<img width="100%" height="100%"src="bannerSHAVI.jpg" alt="banner">
+		</div>
+		<div class="menuBox">
+			<div class="menuText" 
+                 onmouseover="visTekst(0)">
+                 
+                <p class="menuStyle" onclick="sendTil('Shavi-forside.html')">Meny</p>
+				
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('1')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('Utleiesteder.html')">
+			
+				<p>Utleiesteder</p> 
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('2')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('bil-Side.html')">
+			
+				<p>Bil</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('3')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('bat-Side.html')">
+			
+				<p>Båt</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('4')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('abonnement.html')">
+			
+				<p>Abonnement</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('5')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('Booking.html')">
+			
+				<p>Booking</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('6')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('Info-Side.html')">
+			
+				<p>Info</p>
+			</div>
+		</div>
+		<div class="boxHoyre">
+			<!-- legg inn bilde på høyre siden her-->
+            <img src="HydroLiftX-22.jpg" alt="Hydrolift X-22" width="100%" height="100%">
+		</div>
+		<div class="midBox">
+            <h1><strong>Båter</strong></h1>
+            
+            <p>En båtdelingstjeneste lokalisert i Oslo, Bergen og Førde.<br>Vi tilbyr 3 elektriske båter av typen Hydrolift X-22 på de ulike utlånsstedene.</p>
+
+		    <h2>Hydrolift X-22</h2>
+            <h4><i>Detaljer</i></h4>
+            
+        <ul>
+            <li>Lengde 6.68 m</li>
+            <li>Bredde 2.30 m</li>
+            <li>Maksfart 50+ kn</li>
+            <li>Vekt fra 1200kg</li>
+            <li>Antall pasasjerer 6</li>
+            <li>Motor 225 hk</li>
+            <li>Drivstoff 270 L</li>
+
+        </ul>
+
+        <H3>Følgende standardutstyr følger med Hydrolift X-22</H3>
+            
+        <ul>
+            <li>Avtagbare puter</li>
+            <li>Badestige</li>
+            <li>Drivstoffstank 270 liter</li>
+            <li>Dørkbelysning LED</li>
+            <li>Flaggstang med flagg</li>
+            <li>Havnetrekk</li>
+            <li>Pullere 4 stk</li>
+            <li>Kartplotter</li>
+            <li>Kjøleboks</li>
+            <li>Låsbare lagringsrom</li>
+            <li>Reversibel sofarygg</li>
+            <li>Sidesete</li>
+            <li>Stor midtstilt sofabenk</li>
+            <li>Vannskistang</li>
+            <li>Vendbare kjørestoler</li>
+        </ul>
+        <div>
+        <h5>For mer informasjon klikk på link under</h5>
+        <p><a href="https://www.hydrolift.com/x-series/?lang=no">Hydrolift hjemmeside</a></p>
+			</div>
+        </div>
+	</body>
+</html>

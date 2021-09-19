@@ -1,0 +1,154 @@
+body {
+	background-color: #DFCFBE;
+}
+.header {
+	border-style: groove;
+	border-color: #DFCFBE;
+	position: absolute;
+	background: #DFCFBE;
+	width: 94%;
+	height: 30%;
+	left: 3%;
+	top: 1%;
+}
+.menuBox {
+	
+	position: absolute;
+	background: #DFCFBE;
+	width: 20%;
+	height: 70%;
+	left: 3%;
+	top: 35%;
+}
+
+.menuText {
+    position: relative;
+	border-style: groove;
+	border-color: #DFCFBE;
+	background: lightgrey;
+	width: 100%;
+	height: 14.28%;
+    top: 0%;
+    transition: 2s;
+}
+.menuText:hover {
+	transition: 1s;
+	background: grey;
+}
+.menuStyle {
+    position: absolute;
+	font-style: italic;
+	font-size: 30px;
+    margin-left: 40%;
+    margin-top: 8%; 
+}
+.menuBtn {
+	position: relative;
+	border-style: groove;
+	border-color: #DFCFBE;
+	background: grey;
+	width: 100%;
+	height: 12.27%;
+    top: 0%;
+    transition: 2s;
+    text-align: center;  
+}
+
+.menuBtn:hover {
+    background: #93c6fdb1;
+    transition: 0.9s;
+}
+.menuBtn:hover p:hover::after {
+	width: 40%;
+	background: white;
+}
+.menuBtn p {
+    font-style: "Brush Script MT", "Cursive";
+	font-size: 25px;
+}
+.menuBtn p::after {
+    content: '';
+	margin-left:30%;
+    width: 0px;
+    height: 1px;
+    display: block;
+    transition: 600ms;
+
+}
+.menuBtn p:hover::after {
+    width: 40%;
+	background: white;
+	
+}
+.boxHoyre {
+	position: absolute;
+	border-style: ridge;
+	border-color:#DFCFBE ;
+	background: #DFCFBE;
+	width: 20%;
+	height: 66%;
+	right: 3%;
+	top: 35%;
+}
+.midBox {
+	position: absolute;
+	
+	background: #DFCFBE;
+	width: 45%;
+	height: 70%;
+	left: 30%;
+	top: 35%;
+}
+.tekst {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
+	
+	visibility: hidden;
+}
+.bilBilde {
+	position: relative;
+	right:-30%;
+	bottom: -10%;
+	opacity: 1;
+	transition: 1s;
+}
+.bilBilde:hover {
+	opacity: 0.7;
+	transition: opacity 1s;
+}
+.bilBilde:hover .text-block strong{
+	opacity: 1;
+	transition:  1s;
+}
+.bilBilde:hover .text-block h4{
+	opacity: 1;
+	transition:  1s;
+}
+.text-block {
+	position: absolute;
+	right: 43%;
+	bottom: 30%;
+	visibility: visible;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+  .text-block h4 {
+	  font-size: 20px;
+	  opacity: 0;
+	  text-align: center;
+	  font-style: italic;
+	  transition: 1s;
+  }
+  .text-block strong {
+	  font-size: 18px;
+	  opacity: 0;
+	  transition: 1s;
+  }
+.headBilde {
+	position:relative;
+	width: 100%;
+	height: 100%;
+}

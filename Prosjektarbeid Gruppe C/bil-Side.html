@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<script>
+			function sendTil(x) {
+				location.href = x;
+			}
+			function visTekst(x) {
+				let id = ["1", "2", "3", "4", "5", "6"];
+				for (let i = 0; 1 <= 6; i++) {
+					if (id[i] === x) {
+						document.getElementById(id[i]).style.visibility =
+							"visible";
+					} else {
+						document.getElementById(id[i]).style.visibility =
+							"hidden";
+					}
+				}
+			}
+		</script>
+		<link rel="stylesheet" href="Hovedstilark.css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>Shavi Bil</title>
+	</head>
+
+	<body>
+		<div class="header" >
+			<img class="headBilde" src="bannerSHAVI.jpg" alt="banner">
+		</div>
+		<div class="menuBox">
+			<div class="menuText" 
+                 onmouseover="visTekst(0)">
+                 
+				<p class="menuStyle" onclick="sendTil('Shavi-forside.html')">Meny</p>
+                
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('1')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('Utleiesteder.html')">
+			
+				<p>Utleiesteder</p> 
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('2')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('bil-Side.html')">
+			
+				<p>Bil</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('3')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('bat-Side.html')">
+			
+				<p>Båt</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('4')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('abonnement.html')">
+			
+				<p>Abonnement</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('5')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('Booking.html')">
+			
+				<p>Booking</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('6')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('Info-Side.html')">
+			
+				<p>Info</p>
+			</div>
+		</div>
+		<div class="boxHoyre">
+			<!-- legg inn bilde på høyre siden her-->
+		</div>
+		<div class="midBox">
+			<h1><Strong> <i>Biler</i></Strong></h1>
+            <p>Vi tilbyr biler i Oslo, Bergen og Førde.<br>Bilene vi har tilgjengelig for utleie, er alle TESLA Model 3.</p>
+            <div class="bilBilde">
+                <img src="teslabilde.png" alt="Tesla 3">
+                <div class="text-block">
+                <h4>Telsa 3</h4>
+                <pre><strong> Rekkevidde:            614km</strong> </pre>
+                <pre><strong> Antall tilgjengelig:    5</strong></pre>
+                </div>
+               
+            </div>
+        </div>
+	</body>
+</html>

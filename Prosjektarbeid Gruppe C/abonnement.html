@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<script>
+			function sendTil(x) {
+				location.href = x;
+			}
+			function visTekst(x) {
+				let id = ["1", "2", "3", "4", "5", "6"];
+				for (let i = 0; 1 <= 6; i++) {
+					if (id[i] === x) {
+						document.getElementById(id[i]).style.visibility =
+							"visible";
+					} else {
+						document.getElementById(id[i]).style.visibility =
+							"hidden";
+					}
+				}
+			}
+		</script>
+		<link rel="stylesheet" href="Hovedstilark.css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>Shavi</title>
+	</head>
+
+	<body>
+		<div class="header" >
+			<img width="100%" height="100%"src="bannerSHAVI.jpg" alt="banner">
+		</div>
+		<div class="menuBox">
+			<div class="menuText" 
+                 onmouseover="visTekst(0)">
+                
+				<p class="menuStyle" onclick="sendTil('Shavi-forside.html')">Meny</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('1')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('Utleiesteder.html')">
+			
+				<p>Utleiesteder</p> 
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('2')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('bil-Side.html')">
+			
+				<p>Bil</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('3')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('bat-Side.html')">
+			
+				<p>Båt</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('4')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('abonnement.html')">
+			
+				<p>Abonnement</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('5')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('Booking.html')">
+			
+				<p>Booking</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('6')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('Info-Side.html')">
+			
+				<p>Info</p>
+			</div>
+		</div>
+		<div class="boxHoyre">
+			<!-- legg inn bilde på høyre siden her-->
+            <img src="abonnemang.png" alt="tilfeldig bilde som skal endres" width="260px" height="600px">
+		</div>
+		<div class="midBox">
+			 
+            <div class="beholder">
+			<Form>
+				<h1>Abonnement</h1>
+				<p>Fyll ut dette skjema for å lage et abonnement</p>
+				<hr/>
+				<label>Navn</label>
+				<input type="text" placeholder="Navn" />
+				<br/>
+				<label>E-mail</label>
+				<input type="email" placeholder="E-mail" />
+				<br/>
+				<label>Passord</label>
+				<input type="password" placeholder="Passord" />
+				<br/>
+				<label>Gjenta Passord</label>
+				<input type="password" placeholder="Gjenta Passord" />
+				<br/>
+				<p>Ved å opprette en konto godtar du våre <a href="#">Vilkår Og Personvern</a></p>
+				<button>Opprett konto</button>
+				<p>Allerede eksisterende konto <a href="#">Loginn</a></p>
+                <br/>
+                <p>Fri tilgang til alle fra utlånesteder</p>
+                <p>Pris: 15000,- Pr. år.</p>
+                <br/>
+                <p><h4>Bildeling</h4></p>
+                <br/>
+                <p>Fri tilgang til alle fra utlånesteder.</p>
+                <p>Pris: 15000,- Pr. år.</p>
+                <br/>
+                <p><h4>Båtdeling</h4></p>
+                <br/>
+                <p>Fri tilgang til alle båter fra alle utlånesteder.</p>
+                <p>Pris: 25000,- Pr. år.</p>
+                <br/>
+                <p><h4>Total</h4></p>
+                <br/>
+                <p>Fri tilgang til alle biler og båter fra alle utlånesteder.</p>
+                <p>Pris:  30000,- Pr. år.</p>
+
+            
+
+			</Form>
+             </div>
+
+        </div>
+	</body>
+</html>

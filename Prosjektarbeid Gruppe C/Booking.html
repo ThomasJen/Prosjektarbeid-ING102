@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<script>
+			function sendTil(x) {
+				location.href = x;
+			}
+			function visTekst(x) {
+				let id = ["1", "2", "3", "4", "5", "6"];
+				for (let i = 0; 1 <= 6; i++) {
+					if (id[i] === x) {
+						document.getElementById(id[i]).style.visibility =
+							"visible";
+					} else {
+						document.getElementById(id[i]).style.visibility =
+							"hidden";
+					}
+				}
+			}
+		</script>
+		<link rel="stylesheet" href="Hovedstilark.css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>Shavi Booking</title>
+	</head>
+
+	<body>
+		<div class="header" >
+			<img class="headBilde" src="bannerSHAVI.jpg" alt="banner">
+		</div>
+		<div class="menuBox"
+             onmouseover="visTekst(0)">
+            
+			<div class="menuText" onclick="sendTil('Shavi-forside.html')">
+				<p class="menuStyle" >Meny</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('1')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('Utleiesteder.html')">
+			
+				<p>Utleiested</p> 
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('2')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('bil-Side.html')">
+			
+				<p>Bil</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('3')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('bat-Side.html')">
+			
+				<p>Båt</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('4')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('abonnement.html')">
+			
+				<p>Abonnement</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('5')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('Booking.html')">
+			
+				<p>Booking</p>
+			</div>
+			<div
+				class="menuBtn"
+				onmouseover="visTekst('6')"
+                onmouseleave="visTekst(0)"
+				onclick="sendTil('Info-Side.html')">
+			
+				<p>Info</p>
+			</div>
+		</div>
+		<div class="boxHoyre">
+			<!-- legg inn bilde på høyre siden her-->
+		</div>
+		<div class="midBox">
+			<Form>
+				<h1>Booking</h1>
+				<p>Logg inn for å booke</p>
+				<hr/>
+				<label>E-postadresse:</label>
+				<br/>
+				<input type="text"  placeholder="E-postadresse" />
+				<br/>
+				<label>Passord:</label>
+				<br/>
+				<input type="password" placeholder="********" />
+				<br/>
+				<input type="submit" value="Logg inn" />
+				<br/>
+				<h5>Glemt E-postadresse eller passord ? Kontakt oss på telefon eller epost.</h5>
+				<br/>
+			</Form>
+               
+            </div>
+        
+	</body>
+</html>
